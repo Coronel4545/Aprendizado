@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/Logo/Icon.png">
     <link rel="stylesheet" href="Estilo/Principal1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #Principal {
+            max-width: 800px; /* Defina o máximo de largura desejado para o conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo na página */
+            padding: 20px;
+        }
+
+        .Apresente {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .Formulario {
+            max-width: 400px; /* Defina a largura máxima para o formulário */
+            margin: 0 auto; /* Centraliza o formulário */
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #Implementacao {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .ImplementacaoDados {
+            text-align: center;
+        }
+    </style>
     <title>Desafio do IF else</title>
 </head>
 <body>
@@ -14,7 +57,7 @@
                 Seja Bem Vindo
                 <label id="Dinamico"></label>!
             </label>
-            <script src="caminho_do_seu_arquivo_js.js"></script>
+            <script src="/ImplementandoNome/ColetandoNome.js"></script>
         </div>
         <div id="Detalhes_Item">
             <div class="Formulario">
@@ -22,12 +65,36 @@
                     <input type="text" id="Nome_Produto" placeholder="Digite o nome do produto">
                     <input type="text" id="Marca" placeholder="Digite nome da marca do produto">
                     <input type="text" id="Modelo" placeholder="Digite o nome do Modelo">
-                    <input type="text" placeholder="Informe A cor">
-                    <input type="text" placeholder="Valor De venda">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <input type="text" placeholder="Informe A cor" id="CorDoProdutoo">
+                    <input type="text" placeholder="Valor De venda" id="ValorProduto">
+                    <textarea name="" id="Descri" cols="30" rows="10"></textarea>
                 </form>
-                <button id="concluir">PUBLICAR</button>
+                <button id="concluir" onclick="Coletando();">PUBLICAR</button>
+                <script src="/CapturandoDadosJs/ColetandoDados.js"></script>
             </div>
+        </div>
+    </div>
+    <div id="Implementacao">
+        <div class="ImplementacaoDados">
+            <div class="NomeDoproduto2">
+                Conhecido Como: <span id="Geral"></span>
+            </div>
+            <div>
+                NOME DO PRODUTO: <span id="NOMEDOPRODUTO2"></span>
+            </div>
+            <div>
+                MARCA DO PRODUTO: <span id="MARCADOPRODUTO3"></span>
+            </div>
+            <div>
+                MODELO DO PRODUTO: <span id="MODELODOPRODUTO4"></span>
+            </div>
+            <div>
+                COR DO PRODUTO: <span id="CORDOPRODUTO5"></span>
+            </div>
+            <div>
+                <span id="VALORDOPRODUTO6"></span>
+            </div>
+            <div id="Description"></div>
         </div>
     </div>
 </body>
